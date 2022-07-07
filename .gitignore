@@ -511,3 +511,4 @@ pip-selfcheck.json
 config
 # End of https://www.toptal.com/developers/gitignore/api/python,visualstudiocode,jetbrains+all,django,venv!/secrets.json
 secrets.json
+node_modules
