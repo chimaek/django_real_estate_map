@@ -508,5 +508,6 @@ pip-selfcheck.json
 *.code-workspace
 
 .secrets.json
-.django_real_estate_map/config/*
-# End of https://www.toptal.com/developers/gitignore/api/python,visualstudiocode,jetbrains+all,django,venv
+!django_real_estate_map/config/**
+# End of https://www.toptal.com/developers/gitignore/api/python,visualstudiocode,jetbrains+all,django,venv!/secrets.json
+!/secrets.json
