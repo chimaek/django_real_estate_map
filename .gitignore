@@ -507,6 +507,6 @@ pip-selfcheck.json
 # Ignore code-workspaces
 *.code-workspace
 
-secrets.json
-django_real_estate_map/config/*
+.secrets.json
+.django_real_estate_map/config/*
 # End of https://www.toptal.com/developers/gitignore/api/python,visualstudiocode,jetbrains+all,django,venv
