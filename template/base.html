@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'css/lightbox.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bulma.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bulma.css.map' %}">
+    <link rel="stylesheet" href="{% static 'css/bulma.min.css' %}">
+    <title>Title</title>
+</head>
+<body>
+{% block content %}
+
+{% endblock %}
+<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'js/lightbox.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
