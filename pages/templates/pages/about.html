@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'templates/base.html' %}
 
 {% block content %}
     <section id="top-bar" class="p-3">
@@ -51,17 +51,17 @@
                         <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item mr-3">
-                        <a class="nav-link" href="../listings.html">Featured Listings</a>
+                        <a class="nav-link" href="../../../templates/listings.html">Featured Listings</a>
                     </li>
                 </ul>
 
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item mr-3">
-                        <a class="nav-link" href="../register.html">
+                        <a class="nav-link" href="../../../templates/register.html">
                             <i class="fas fa-user-plus"></i> Register</a>
                     </li>
                     <li class="nav-item mr-3">
-                        <a class="nav-link" href="../login.html">
+                        <a class="nav-link" href="../../../templates/login.html">
                             <i class="fas fa-sign-in-alt"></i>
 
                             Login</a>
@@ -103,7 +103,7 @@
                 <div class="col-md-8">
                     <h2>We Search For The Perfect Home</h2>
                     <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, pariatur!</p>
-                    <img src="assets/img/about.jpg" alt="">
+                    <img src="{% static 'images/homes/home-1.jpg'%} " alt="">
                     <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis esse officia
                         repudiandae ad saepe ex, amet
                         neque quod accusamus rem quia magnam magni dolorum facilis ullam minima perferendis?
@@ -133,7 +133,7 @@
         <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem velit aperiam, unde aliquid at
             similique!</h4>
         <hr>
-        <a href="../listings.html" class="btn btn-secondary text-white btn-lg">View Our Featured Listings</a>
+        <a href="../../../templates/listings.html" class="btn btn-secondary text-white btn-lg">View Our Featured Listings</a>
     </section>
 
     <!-- Team -->
