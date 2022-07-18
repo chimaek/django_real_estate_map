@@ -1,77 +1,6 @@
-{% extends 'static/../../../templates/base.html' %}
+{% extends 'base.html' %}
 {% load static %}
 {% block content %}
-    <!-- Top Bar -->
-    <section id="top-bar" class="p-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <i class="fas fa-phone"></i> (617)-555-5555
-                </div>
-                <div class="col-md-4">
-                    <i class="fas fa-envelope-open"></i> contact@btrealestate.co
-                </div>
-                <div class="col-md-4">
-                    <div class="social text-right">
-                        <a href="#">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fab fa-pinterest"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="{% url 'index' %}">
-                <img src="{% static '/../../../django_real_estate_map/static/img/logo.png' %}" class="logo" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <ul class="navbar-nav">
-                    <li class="nav-item active mr-3">
-                        <a class="nav-link" href="{% url 'index' %}">Home</a>
-                    </li>
-                    <li class="nav-item mr-3">
-                        <a class="nav-link" href="{% url 'about' %}">About</a>
-                    </li>
-                    <li class="nav-item mr-3">
-                        <a class="nav-link" href="{% static 'templates/listings.html' %}">Featured Listings</a>
-                    </li>
-                </ul>
-
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item mr-3">
-                        <a class="nav-link" href="{% static 'templates/register.html' %}">
-                            <i class="fas fa-user-plus"></i> Register</a>
-                    </li>
-                    <li class="nav-item mr-3">
-                        <a class="nav-link" href="{% static 'templates/login.html' %}">
-                            <i class="fas fa-sign-in-alt"></i>
-
-                            Login</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
     <!-- Showcase -->
     <section id="showcase">
         <div class="container text-center">
@@ -84,7 +13,7 @@
                         asperiores eveniet vel nostrum magnam
                         voluptatum tempore! Consectetur, id commodi!</p>
                     <div class="search">
-                        <form action="{% static 'templates/search.html' %}">
+                        <form action="{% static 'img/temp-img/search.html' %}">
                             <!-- Form Row 1 -->
                             <div class="form-row">
                                 <div class="col-md-4 mb-3">
@@ -206,7 +135,8 @@
                 <!-- Listing 1 -->
                 <div class="col-md-6 col-lg-4 mb-4">
                     <div class="card listing-preview">
-                        <img class="card-img-top" src="{% static '../../../django_real_estate_map/static/img/homes/home-1.jpg' %}" alt="">
+                        <img class="card-img-top"
+                             src="{% static 'img/homes/home-1.jpg' %}" alt="">
                         <div class="card-img-overlay">
                             <h2>
                                 <span class="badge badge-secondary text-white">$490,000</span>
@@ -216,38 +146,39 @@
                             <div class="listing-heading text-center">
                                 <h4 class="text-primary">45 Drivewood Circle</h4>
                                 <p>
-                                    <i class="fas fa-map-marker text-secondary"></i> Norwood MA, 02062</p>
+                                    <em class="fas fa-map-marker text-secondary"></em> Norwood MA, 02062</p>
                             </div>
                             <hr>
                             <div class="row py-2 text-secondary">
                                 <div class="col-6">
-                                    <i class="fas fa-th-large"></i> Sqft: 2500
+                                    <em class="fas fa-th-large"></em> Sqft: 2500
                                 </div>
                                 <div class="col-6">
-                                    <i class="fas fa-car"></i> Garage: 2
+                                    <em class="fas fa-car"></em> Garage: 2
                                 </div>
                             </div>
                             <div class="row py-2 text-secondary">
                                 <div class="col-6">
-                                    <i class="fas fa-bed"></i> Bedrooms: 3
+                                    <em class="fas fa-bed"></em> Bedrooms: 3
                                 </div>
                                 <div class="col-6">
-                                    <i class="fas fa-bath"></i> Bathrooms: 2
+                                    <em class="fas fa-bath"></em> Bathrooms: 2
                                 </div>
                             </div>
                             <hr>
                             <div class="row py-2 text-secondary">
                                 <div class="col-6">
-                                    <i class="fas fa-user"></i> Kyle Brown
+                                    <em class="fas fa-user"></em> Kyle Brown
                                 </div>
                             </div>
                             <div class="row text-secondary pb-2">
                                 <div class="col-6">
-                                    <i class="fas fa-clock"></i> 5 days ago
+                                    <em class="fas fa-clock"></em> 5 days ago
                                 </div>
                             </div>
                             <hr>
-                            <a href="{% static 'templates/listings.html' %}" class="btn btn-primary btn-block">More Info</a>
+                            <a href="{% static 'img/temp-img/listings.html' %}" class="btn btn-primary btn-block">More
+                                Info</a>
                         </div>
                     </div>
                 </div>
@@ -255,7 +186,8 @@
                 <!-- Listing 2 -->
                 <div class="col-md-6 col-lg-4 mb-4">
                     <div class="card listing-preview">
-                        <img class="card-img-top" src="{% static '../../../django_real_estate_map/static/img/homes/home-2.jpg' %}" alt="">
+                        <img class="card-img-top"
+                             src="{% static 'img/homes/home-2.jpg' %}" alt="">
                         <div class="card-img-overlay">
                             <h2>
                                 <span class="badge badge-secondary text-white">$550,000</span>
@@ -265,38 +197,39 @@
                             <div class="listing-heading text-center">
                                 <h4 class="text-primary">18 Jefferson Lane</h4>
                                 <p>
-                                    <i class="fas fa-map-marker text-secondary"></i> Woburn MA, 01801</p>
+                                    <em class="fas fa-map-marker text-secondary"></em> Woburn MA, 01801</p>
                             </div>
                             <hr>
                             <div class="row py-2 text-secondary">
                                 <div class="col-6">
-                                    <i class="fas fa-th-large"></i> Sqft: 3200
+                                    <em class="fas fa-th-large"></em> Sqft: 3200
                                 </div>
                                 <div class="col-6">
-                                    <i class="fas fa-car"></i> Garage: 1
+                                    <em class="fas fa-car"></em> Garage: 1
                                 </div>
                             </div>
                             <div class="row py-2 text-secondary">
                                 <div class="col-6">
-                                    <i class="fas fa-bed"></i> Bedrooms: 4
+                                    <em class="fas fa-bed"></em> Bedrooms: 4
                                 </div>
                                 <div class="col-6">
-                                    <i class="fas fa-bath"></i> Bathrooms: 2.5
+                                    <em class="fas fa-bath"></em> Bathrooms: 2.5
                                 </div>
                             </div>
                             <hr>
                             <div class="row py-2 text-secondary">
                                 <div class="col-6">
-                                    <i class="fas fa-user"></i> Mark Hudson
+                                    <em class="fas fa-user"></em> Mark Hudson
                                 </div>
                             </div>
                             <div class="row text-secondary pb-2">
                                 <div class="col-6">
-                                    <i class="fas fa-clock"></i> 5 days ago
+                                    <em class="fas fa-clock"></em> 5 days ago
                                 </div>
                             </div>
                             <hr>
-                            <a href="{% static 'templates/listing.html' %}" class="btn btn-primary btn-block">More Info</a>
+                            <a href="{% static 'img/temp-img/listing.html' %}" class="btn btn-primary btn-block">More
+                                Info</a>
                         </div>
                     </div>
                 </div>
@@ -304,7 +237,8 @@
                 <!-- Listing 3 -->
                 <div class="col-md-6 col-lg-4 mb-4">
                     <div class="card listing-preview">
-                        <img class="card-img-top" src="{% static '../../../django_real_estate_map/static/img/homes/home-3.jpg' %}" alt="">
+                        <img class="card-img-top"
+                             src="{% static 'img/homes/home-3.jpg' %}" alt="">
                         <div class="card-img-overlay">
                             <h2>
                                 <span class="badge badge-secondary text-white">$580,000</span>
@@ -314,38 +248,39 @@
                             <div class="listing-heading text-center">
                                 <h4 class="text-primary">187 Woodrow Street</h4>
                                 <p>
-                                    <i class="fas fa-map-marker text-secondary"></i> Salem MA, 01915</p>
+                                    <em class="fas fa-map-marker text-secondary"></em> Salem MA, 01915</p>
                             </div>
                             <hr>
                             <div class="row py-2 text-secondary">
                                 <div class="col-6">
-                                    <i class="fas fa-th-large"></i> Sqft: 3107
+                                    <em class="fas fa-th-large"></em> Sqft: 3107
                                 </div>
                                 <div class="col-6">
-                                    <i class="fas fa-car"></i> Garage: 0
+                                    <em class="fas fa-car"></em> Garage: 0
                                 </div>
                             </div>
                             <div class="row py-2 text-secondary">
                                 <div class="col-6">
-                                    <i class="fas fa-bed"></i> Bedrooms: 4
+                                    <em class="fas fa-bed"></em> Bedrooms: 4
                                 </div>
                                 <div class="col-6">
-                                    <i class="fas fa-bath"></i> Bathrooms: 3
+                                    <em class="fas fa-bath"></em> Bathrooms: 3
                                 </div>
                             </div>
                             <hr>
                             <div class="row py-2 text-secondary">
                                 <div class="col-6">
-                                    <i class="fas fa-user"></i> Mark Hudson
+                                    <em class="fas fa-user"></em> Mark Hudson
                                 </div>
                             </div>
                             <div class="row text-secondary pb-2">
                                 <div class="col-6">
-                                    <i class="fas fa-clock"></i> 5 days ago
+                                    <em class="fas fa-clock"></em> 5 days ago
                                 </div>
                             </div>
                             <hr>
-                            <a href="{% static 'templates/listings.html' %}" class="btn btn-primary btn-block">More Info</a>
+                            <a href="{% static 'img/temp-img/listings.html' %}" class="btn btn-primary btn-block">More
+                                Info</a>
                         </div>
                     </div>
                 </div>
@@ -358,7 +293,7 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-md-4">
-                    <i class="fas fa-comment fa-4x mr-4"></i>
+                    <em class="fas fa-comment fa-4x mr-4"></em>
                     <hr>
                     <h3>Consulting Services</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, debitis nam! Repudiandae,
@@ -366,7 +301,7 @@
                         hic dignissimos ratione ea quae.</p>
                 </div>
                 <div class="col-md-4">
-                    <i class="fas fa-home fa-4x mr-4"></i>
+                    <em class="fas fa-home fa-4x mr-4"></em>
                     <hr>
                     <h3>Propery Management</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, debitis nam! Repudiandae,
@@ -374,7 +309,7 @@
                         hic dignissimos ratione ea quae.</p>
                 </div>
                 <div class="col-md-4">
-                    <i class="fas fa-suitcase fa-4x mr-4"></i>
+                    <em class="fas fa-suitcase fa-4x mr-4"></em>
                     <hr>
                     <h3>Renting & Selling</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, debitis nam! Repudiandae,
@@ -385,10 +320,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer id="main-footer" class="py-4 bg-primary text-white text-center">
-        Copyright &copy;
-        <span class="year"></span> BT Real Estate
-    </footer>
+
 
 {% endblock %}

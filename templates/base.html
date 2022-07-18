@@ -10,14 +10,19 @@
     <link rel="stylesheet" href="{% static 'css/lightbox.min.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="{% static 'css/bulma.css' %}">
-    <link rel="stylesheet" href="{% static 'css/bulma.css.map' %}">
-    <link rel="stylesheet" href="{% static 'css/bulma.min.css' %}">
+    {#    <link rel="stylesheet" href="{% static 'css/bulma.css.map' %}">#}
+    {#    <link rel="stylesheet" href="{% static 'css/bulma.min.css' %}">#}
     <title>Title</title>
 </head>
 <body>
+{#top_bar#}
+{% include 'part/_topbar.html' %}
+{#nav-bar#}
+{% include 'part/_navbar.html' %}
 {% block content %}
 
 {% endblock %}
+{% include 'part/_footer.html' %}
 <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
 <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
 <script src="{% static 'js/lightbox.min.js' %}"></script>

@@ -500,7 +500,8 @@ pip-selfcheck.json
 # Ignore all local history of files
 .history
 .ionide
-
+.idea/
+.idea
 # Support for Project snippet scope
 .vscode/*.code-snippets
 
@@ -514,3 +515,4 @@ secrets.json
 node_modules
 /static
 /media
+/.idea/codeStyles/codeStyleConfig.xml
