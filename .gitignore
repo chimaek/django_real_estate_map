@@ -2,7 +2,8 @@
 __pycache__/
 *.py[cod]
 *$py.class
-
+django_real_estate_map/settings/
+settings/
 # C extensions
 *.so
 
