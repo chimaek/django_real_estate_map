@@ -24,7 +24,7 @@ class Listing(models.Model):
     lot_size = models.DecimalField(max_digits=5, decimal_places=1)
     photo_main = models.ImageField(upload_to=date)
     for i in range(1, 7):
-        locals()[f'photo{i}'] = models.ImageField(upload_to=date, blank=True)
+        locals()[f"photo{i}"] = models.ImageField(upload_to=date, blank=True)
     list_date = models.DateField(auto_now=True, blank=True)
 
     def __str__(self):

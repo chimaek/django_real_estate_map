@@ -516,3 +516,4 @@ node_modules
 /static
 /media
 /.idea/codeStyles/codeStyleConfig.xml
+django_real_estate_map/settings/api_key.py
