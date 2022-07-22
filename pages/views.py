@@ -1,3 +1,4 @@
+import ninja
 from django.shortcuts import render
 
 
@@ -5,6 +6,7 @@ from django.shortcuts import render
 
 
 def index(req):
+
     return render(req, "pages/index.html")
 
 

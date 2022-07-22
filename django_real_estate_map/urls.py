@@ -15,10 +15,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from ninja import NinjaAPI
+from django.conf import settings
+from django.conf.urls.static import static
+
+# api = NinjaAPI()
 
 urlpatterns = [
-    path("admin/", admin.site.urls),
-    path("", include("pages.urls")),
-    path("listings/", include("listings.urls")),
-    # path('realtors/', include('realtors.urls')),
-]
+                  path("admin/", admin.site.urls),
+                  path("", include("pages.urls")),
+                  path("listings/", include("listings.urls")),
+                  path('realtors/', include('realtors.urls')),
+                  # path("api/", api.urls),
+              ]
